@@ -1,0 +1,8 @@
+.header {
+    background-color: #1abc9C;
+    font-size: 1em;
+}
+
+a:hover {
+    color: black !important;
+}

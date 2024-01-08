@@ -1,0 +1,31 @@
+<div class="bg1 full">
+    <div class="row full">
+        <div class="col center">
+            <div>
+                <div>
+                    <h3 class="clr1">Login</h3>
+                    <div class="font-italic">
+                        Don't have an account
+                        <a routerLink="/register">create one</a>
+                    </div>
+                </div>
+                <form class="pt-3 was-validated" (ngSubmit)="login()" [formGroup]="loginForm" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" formControlName="user" class="form-control form-control-sm" placeholder="Your name" required>
+                        <small *ngIf="hasError('user')" class="text-danger font-italic">Username required!</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" formControlName="password" class="form-control form-control-sm" placeholder="Your password" required>
+                        <small *ngIf="hasError('password')" class="text-danger font-italic">password required!</small>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-sm" [disabled]="loginForm.invalid">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

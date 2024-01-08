@@ -1,0 +1,17 @@
+.author, .published {
+    font-size: 1em;
+}
+.clr1 {
+    color: #1abc9C;
+}
+.wrap {
+    overflow-x: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+}
+.bg-gray {
+    background-color: #faf9f9;
+}
